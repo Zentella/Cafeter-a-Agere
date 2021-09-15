@@ -1,0 +1,18 @@
+nav {
+  .form __button--a {
+    color: black;
+    border: 2px solid black;
+  }
+  .form__button--a:hover {
+    color: black;
+    border: 2px solid black;
+  }
+  .form__button--b {
+    background: $shinyShamrock;
+    color: $white;
+  }
+  .form__button--b:hover {
+    background: $TurquoiseGreen;
+    color: $black;
+  }
+}

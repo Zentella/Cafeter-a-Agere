@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafetería Agere</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Mono&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        figure {
+          border: 1px #cccccc solid;
+          padding: 4px;
+          margin: auto;
+        }
+        
+        figcaption {
+          background-color: green;
+          color: white;
+          font-style: italic;
+          padding: 2px;
+          text-align: center;
+          font-weight: light;
+        }
+        </style>
+</head>
+<body>
+    <!--   -->
+
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./images/logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+            Bootstrap
+          </a>
+        </div>
+        <form class="form container-fluid justify-content-end">
+            <button class="form__button--a btn btn-sm" type="button">Iniciar sesión</button>
+            <button class="form__button--b btn btn-sm" type="button">Regístrate</button>
+          </form>
+    </nav>
+
+    <header></header>
+
+    <!-- <figure> representa contenido independiente, a menudo con un título. 
+        Si bien se relaciona con el flujo principal, su posición es independiente de éste.  -->
+    <figure>
+        <img src="./images/img-1.png" alt="Trulli" style="width:100%">
+        <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+    </figure>
+
+    <!-- (<hgroup>) representa el encabezado de una sección. Define un solo título que participa de la estructura 
+        del documento como el encabezado de la sección implícita o explícita a la que pertenece  -->
+    <hgroup id="myHgroup">
+        <h1>Welcome to my WWF</h1>
+        <h2>For a living planet</h2>
+      </hgroup>
+
+      <button onclick="myFunction()">Try it</button>
+
+      <p id="demo"></p>
+
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myHgroup").innerHTML;
+          document.getElementById("demo").innerHTML = x;
+        }
+        </script>
+        
+
+    <section></section>
+
+    <article></article>
+
+    <footer></footer>
+    
+</body>
+</html>
+<!--
+● Crear clases semánticas utilizando nomenclatura de metodología BEM.
+○ Agregar una clase bloque a la barra de navegación, a la navegación una clase
+de elemento y al botón una clase modificadora siguiendo la normas
+especificadas en la nomenclatura BEM.
+■ Es importante como buena práctica escribir en inglés las clases.
+● Utilizar variables de Sass para reutilizar código CSS/SCSS.
+○ Agregar variables de colores, fuentes, tamaño y grosor de fuentes siguiendo
+la guía de estilos.
+○ Utilizar al menos 5 variables en el proyecto.
+● Crear estilos base del proyecto.
+○ Agregar estilos reset al proyecto.
+○ Agregar estilos base para tipografías del proyecto.
+● Identificar elementos que constituyen la página del proyecto web.
+○ Definir los estilos en la página.
+○ Crear parciales para la página.
+○ Identificar colores de fondo usados en representación visual.
+○ Utilizar unidades de medidas relativas para que el layout sea fluido.
+○ Definir reglas a CSS/SCSS a utilizar en la página.
+○ Utilizar reglas de posición en elementos e imágenes.
+■ Usar z-index para sobreponer imágenes y bloques.
+○ Flotar contenedores en secciones header, navegación y contacto.
+○ Limpiar flotaciones usando clear.
+_ 3
+www.desafiolatam.com
+● Crear estilos para componentes del proyecto web.
+○ Identificar componentes a dar estilos.
+○ Crear parciales para componentes.
+○ Denifir reglas CSS/SCSS a utilizar componentes.
+¿Qué deberás entregar?
+● Maqueta con la traducción del mockup.
+● Repositorio que contenga la maqueta con sus respectivos archivos y directorios.
+-->
