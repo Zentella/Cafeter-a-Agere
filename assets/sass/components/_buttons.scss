@@ -1,17 +1,22 @@
-nav {
-  .form __button--a {
-    color: black;
-    border: 2px solid black;
+.form {
+  .form__button--primary {
+    margin: 0 8% 0 0;
+    color: $QuickSilver;
+    border: 1px solid $QuickSilver;
+    font-size: $medium;
   }
-  .form__button--a:hover {
-    color: black;
-    border: 2px solid black;
+  .form__button--primary:hover {
+    color: $black;
+    border: 2px solid $black;
   }
-  .form__button--b {
+  .form__button--secundary {
+    margin: 0 1% 0 0px;
     background: $shinyShamrock;
     color: $white;
+    font-size: $medium;
+
   }
-  .form__button--b:hover {
+  .form__button--secundary:hover {
     background: $TurquoiseGreen;
     color: $black;
   }

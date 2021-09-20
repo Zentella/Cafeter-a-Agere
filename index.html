@@ -1,88 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cafetería Agere</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Mono&family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafetería Agere</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Mono&family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
-    <style>
-        figure {
-          border: 1px #cccccc solid;
-          padding: 4px;
-          margin: auto;
-        }
-        
-        figcaption {
-          background-color: green;
-          color: white;
-          font-style: italic;
-          padding: 2px;
-          text-align: center;
-          font-weight: light;
-        }
-        </style>
+
 </head>
+
 <body>
-    <!--   -->
+  <!--   -->
 
-    <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="./images/logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
-            Bootstrap
-          </a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/images/logo.png" alt="logo" width="30" height="24" class="d-inline-block align-text-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="links collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" aria-current="page" href="#">Acerca de</a>
+          <a class="nav-link" href="#">Tienda</a>
         </div>
-        <form class="form container-fluid justify-content-end">
-            <button class="form__button--a btn btn-sm" type="button">Iniciar sesión</button>
-            <button class="form__button--b btn btn-sm" type="button">Regístrate</button>
-          </form>
-    </nav>
+      </div>
+    </div>
+    <form class="form container-fluid justify-content-end">
+      <button class="form__button--primary btn btn-sm" type="button">Iniciar sesión</button>
+      <button class="form__button--secundary btn btn-sm" type="button">Regístrate</button>
+    </form>
 
-    <header></header>
+  </nav>
 
-    <!-- <figure> representa contenido independiente, a menudo con un título. 
-        Si bien se relaciona con el flujo principal, su posición es independiente de éste.  -->
-    <figure>
-        <img src="./images/img-1.png" alt="Trulli" style="width:100%">
-        <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+  <header>
+    <figure class="image row">
+      <img class="col-9 image__pic" src="./assets/images/img-1.png" alt="local">
+      <figcaption class="col-3">
+        <hgroup id="myHgroup">
+          <h1>Café Agere</h1>
+          <h6>Coffee Shop</h6>
+        </hgroup>
+      </figcaption>
     </figure>
+  </header>
 
-    <!-- (<hgroup>) representa el encabezado de una sección. Define un solo título que participa de la estructura 
-        del documento como el encabezado de la sección implícita o explícita a la que pertenece  -->
-    <hgroup id="myHgroup">
-        <h1>Welcome to my WWF</h1>
-        <h2>For a living planet</h2>
-      </hgroup>
+  <section>
+    <div>
+      <div class="box box--yellow"></div>
+      <div class="box box--salmon">
+        <i class="fas fa-arrow-right"></i>
+      </div>
+      <div class="d-none d-md-block">
+        <div class="box box--blue"></div>
+        <div class="box box--cafe"><img class="box__image" src="./assets/images/img-3.png" alt=""></div>
 
-      <button onclick="myFunction()">Try it</button>
+        <div class="box box--text">
+          <div>
+            <h1>+50</h1>
+            <p>Variedades de café</p>
+          </div>
+          <div>
+            <h1>20</h1>
+            <p>Países diferentes</p>
+          </div>
+          <div>
+            <h1>+1000</h1>
+            <p>Accesorios para hacer mejor el café</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <p id="demo"></p>
+  <footer>
 
-      <script>
-        function myFunction() {
-          var x = document.getElementById("myHgroup").innerHTML;
-          document.getElementById("demo").innerHTML = x;
-        }
-        </script>
-        
+    <div class="card mb-3" style="max-width: 940px;">
+      <div class="row g-0">
 
-    <section></section>
+        <div class="col-md-10">
 
-    <article></article>
+          <div class="col-md-7">
+            <div class="card-body">
+              <h5 class="card-title">Ven a Conocernos</h5>
+              <p class="card-text">Disfruta de una gran experiencia tomando un café o un té dentro de nuestra tienda o
+                si prefieres puedes comprar en línea nuestros cafés para disfrutarlos en casa.</p>
+            </div>
+          </div>
 
-    <footer></footer>
-    
+          <div class="col-md-5 footer__map">
+            <img src="./assets/images/img-4.png" class="footer__pic img-fluid rounded-start" alt="mapa">
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <img class="footer__pic col-3 d-none d-md-block" src="./assets/images/img-2.png" alt="vasoCafe">
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
 </body>
+
 </html>
 <!--
-● Crear clases semánticas utilizando nomenclatura de metodología BEM.
-○ Agregar una clase bloque a la barra de navegación, a la navegación una clase
-de elemento y al botón una clase modificadora siguiendo la normas
-especificadas en la nomenclatura BEM.
 ■ Es importante como buena práctica escribir en inglés las clases.
 ● Utilizar variables de Sass para reutilizar código CSS/SCSS.
 ○ Agregar variables de colores, fuentes, tamaño y grosor de fuentes siguiendo

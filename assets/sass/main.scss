@@ -1,9 +1,18 @@
 //abstracts
 @import 'abstracts/variables';
+
+//base
+@import 'base/reset';
+@import 'base/typography';
+
 //components
 @import 'components/buttons';
+
 //layout
 @import 'layout/navigation';
+@import 'layout/header';
+@import 'layout/section';
+@import 'layout/footer';
+
 //vendors
 @import 'vendors/bootstrap-5.0.2/bootstrap';
-//@import 'vendors/bootstrap-4.6.0/bootstrap';

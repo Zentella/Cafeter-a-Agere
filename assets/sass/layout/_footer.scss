@@ -1,0 +1,39 @@
+.footer__map {
+    position: absolute;
+    width: 52% !important;
+    margin: -210px 0 0 225px;
+}
+
+.footer__pic {
+    position: relative;
+    margin: -19px 0 0 220px;
+    height: 120%;
+    width: 210% !important;
+}
+
+.card {
+    border: none  !important;
+}
+
+
+.card-body {
+    margin-left: 38px;
+}
+
+.card-title {
+    font-size: $x-large;
+    margin: 10px 0 0px 20px;
+}
+
+.card-text {
+    font-size: $medium;
+    margin: 20px 0 0 20px;
+}
+
+@media (max-width: 768px) {
+    .footer__map {
+        position: absolute;
+        width: 50% !important;
+        margin: 10px 0 0 -80px;
+    }
+  }

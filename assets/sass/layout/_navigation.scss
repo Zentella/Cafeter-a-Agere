@@ -1,6 +1,14 @@
-.navbar {
-    display: flex;
-    &__buttons {
-        //justify-content: right;
-    }
+nav {
+  margin-bottom: 1%;
+}
+
+a.nav-link {
+  font-family: $PT-Mono;
+  color: $QuickSilver !important;
+  font-weight: $lighter;
+}
+
+a.nav-link:hover {
+  color: $black !important;
+  font-weight: $regular;
 }

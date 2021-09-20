@@ -1,0 +1,231 @@
+--watch = mirando constantemente los cambios
+
+en gitBash
+
+sass --watch assets/sass/main.scss assets/css/main.css
+
+sass --watch assets/sass/main.scss assets/css/style.css
+
+
+*** Orden ***
+
+//abstracts
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/placeholders';
+
+//base
+@import 'base/reset';
+@import 'base/animation';
+@import 'base/typography';
+
+//components
+@import 'components/buttons';
+@import 'components/input';
+@import 'components/cards';
+@import 'components/carousel';
+@import 'components/cover';
+@import 'components/dropdown';
+
+//layout
+@import 'layout/main-section';
+@import 'layout/navigation';
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/sidebar';
+@import 'layout/forms';
+
+//pages
+@import 'pages/home';
+@import 'pages/contact';
+
+//themes
+@import 'themes/theme';
+@import 'themes/admin';
+
+//vendors
+@import 'vendors/bootstrap-4.6.0/bootstrap';
+@import 'vendors/jquery-ui';
+
+
+*** variables ***
+
+// Typography
+// Font Family
+
+$OldStandard: 'Old Standard TT', serif;
+$open-sans: 'Open Sans', sans-serif;
+$merriweather: 'Merriweather', serif;
+$playfair : 'Playfair Display', serif;
+$poppins:'Poppins', sans-serif;
+$PT-Mono: 'PT Mono', monospace;
+$Raleway: 'Raleway', sans-serif;
+$roboto:'Roboto', sans-serif;
+$ubuntu:'Ubuntu', sans-serif;
+
+// Font Weight
+
+$extra-light: 200;
+$light: 300;
+$regular: 400;
+$semi-bold: 600;
+$bold: 700;
+
+// Font Sizes
+
+$x-small: 10px;
+$x-small: 12px;
+$small: small;
+$small: 14px;
+$medium:16px;
+$medium: 18px;
+$large: large;
+$large: 18px;
+$large: 20px;
+$large: 45px;
+$large: 50px;
+$x-large: x-large;
+$x-large: 20px;
+$x-large:30px;
+$x-large: 70px;
+$xx-large: xx-large;
+$xx-large: 30px;
+$xx-large:35px;
+$xx-large: 40px;
+$xx-large: 100px;
+$xxx-large: xxx-large;
+$xxx-large:40px;
+$xxx-large: 50px;
+$xxx-large: 100px;
+$xxxx-large:45px;
+$xxxx-large: 130px;
+$xxxxx-large:50px;
+
+// Color Scheme
+// First Color Scheme 
+// Second Color Scheme
+// Third Color Scheme
+
+$white: white;
+$white: #fff;
+$white:#FFFFFF;
+
+$black:black;
+$black:#000000;
+$black: #393e41;
+$blue-bell:#a491d2;
+$blueFrance:#3C91E6;
+$blueJeans:#5FA5EA;
+$Buff: #F1DD7B;
+
+$carmine: #e94f37;
+$coral: coral;
+$coral: #FA824C;
+$cyan: #8DEAED;
+$Charcoal:#2E1503;
+
+$dark:#212F3D;
+$dark-jungle:#1b1f21;
+
+$Eerieblack: #121619;
+
+$flame: #E4572E;
+$FuzzyWuzzy: #E56353;
+
+$granite: #5d6163;
+$GraniteGray: hsl(70, 3%, 40%);
+$Granite-gray: #646266;
+$gray: #bababa;
+$Gray: #babab8;
+$gray:#bec1bb;
+$gris: rgb(230, 230, 230);
+
+$ired: #CD6155;
+$Isabelline: #ECECEC;
+
+$JellyBean: #e56353;
+$jordyBlue:#82B9EF;
+
+$Light-gray:#D1D1D1;
+$LightRedOchre:#E87554;
+
+$Niquel: #6C6E70;
+
+$old-silver:#828485;
+$Orange:#FFA500;
+$outer-space:#444749;
+$outer-space:#454545;
+
+
+$pale-lavender:#d4dcff;
+$PastelGray: #BDDFC7;
+$PastelPink: #f0a9a1;
+$PastelPink: #f2b2a0;
+$pink: #f7bfb6;
+$platinum:#e8ebe4;
+$Platinum: #e8e8e8;
+
+$QuickSilver: #a0a0a0;
+$QuickSilver: #a2a2a2;
+$Quick-silver: #A6A5A8;
+
+$Rudypink: #D76C69;
+
+$Sable:#060606;
+$salmon: #ef7f6d;
+$Salmon: #e97f72;
+$shinyShamrock: #4CA866;
+$silver: #818486;
+$Smoky-black: #0C0910;
+$Snow: #fafafa;
+$soap:#cdc3e6;
+$Spanishgray: #989797;
+$Spanishpink: #ECBCBA;
+
+$Tangerine:#FFAF6D;
+$TaupeGray: #91918d;
+$TurquoiseGreen: #9DCFAB;
+
+$vanilla: #F5E7A1;
+$verdigris: #44bba4;
+
+
+
+
+
+
+
+
+
+*** mixins ***
+
+@mixin letras {
+  font-family: $Roboto;//
+  font-size: $medium;//
+  line-height: 3;//
+}
+
+ @mixin card {  
+  margin: 20px;
+  padding: 8px;
+  border: 1px solid $black;
+  width: 54rem;
+
+  .card-title {
+    font-size: $large;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  h6 {
+    font-size: $large;
+    margin-top: 20px;
+    margin-bottom: 20px;    
+  }
+
+  i {
+    padding-bottom: 20px;
+  }
+}
