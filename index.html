@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cafetería Agere</title>
+  <!--sass --watch assets/sass/main.scss:assets/css/style.css-->
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=PT+Mono&family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -23,10 +24,10 @@
       <a class="navbar-brand" href="#">
         <img src="./assets/images/logo.png" alt="logo" width="30" height="24" class="d-inline-block align-text-top">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
+      </button> -->
       <div class="links collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-link" aria-current="page" href="#">Acerca de</a>
@@ -43,8 +44,8 @@
 
   <header>
     <figure class="image row">
-      <img class="col-9 image__pic" src="./assets/images/img-1.png" alt="local">
-      <figcaption class="col-3">
+      <img class="col-12 col-md-10 image__pic" src="./assets/images/img-1.png" alt="local">
+      <figcaption class="col-2">
         <hgroup id="myHgroup">
           <h1>Café Agere</h1>
           <h6>Coffee Shop</h6>
@@ -112,32 +113,3 @@
 </body>
 
 </html>
-<!--
-■ Es importante como buena práctica escribir en inglés las clases.
-● Utilizar variables de Sass para reutilizar código CSS/SCSS.
-○ Agregar variables de colores, fuentes, tamaño y grosor de fuentes siguiendo
-la guía de estilos.
-○ Utilizar al menos 5 variables en el proyecto.
-● Crear estilos base del proyecto.
-○ Agregar estilos reset al proyecto.
-○ Agregar estilos base para tipografías del proyecto.
-● Identificar elementos que constituyen la página del proyecto web.
-○ Definir los estilos en la página.
-○ Crear parciales para la página.
-○ Identificar colores de fondo usados en representación visual.
-○ Utilizar unidades de medidas relativas para que el layout sea fluido.
-○ Definir reglas a CSS/SCSS a utilizar en la página.
-○ Utilizar reglas de posición en elementos e imágenes.
-■ Usar z-index para sobreponer imágenes y bloques.
-○ Flotar contenedores en secciones header, navegación y contacto.
-○ Limpiar flotaciones usando clear.
-_ 3
-www.desafiolatam.com
-● Crear estilos para componentes del proyecto web.
-○ Identificar componentes a dar estilos.
-○ Crear parciales para componentes.
-○ Denifir reglas CSS/SCSS a utilizar componentes.
-¿Qué deberás entregar?
-● Maqueta con la traducción del mockup.
-● Repositorio que contenga la maqueta con sus respectivos archivos y directorios.
--->
